@@ -31,7 +31,7 @@ local function register_coin(name, sourcename, description, inventory_image)
 	minetest.register_craftitem(name, {
 		description = description,
 		inventory_image = inventory_image,
-		stack_max = 10000,
+		stack_max = 65535,
 	})
 	registerblockrecipe(name, sourcename)
 end
